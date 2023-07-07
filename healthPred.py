@@ -3,7 +3,7 @@ import joblib
 
 
 def main():
-    html_temp = """"
+    html_temp = """
     <div style="background-color:lightblue;padding:16px">
     <h2 style="color:#232323;text-align:center">Health Insurance Cost Prediction</h2>
     </div>
