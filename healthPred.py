@@ -5,7 +5,7 @@ import joblib
 def main():
     html_temp = """
     <div style="background-color:lightblue;padding:16px">
-    <h2 style="color:#232323;text-align:center">Health Insurance Cost Prediction</h2>
+    <h2 style="color:#232323;text-align:center">Health Insurance Cost Forecasting</h2>
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
@@ -63,7 +63,7 @@ def main():
         prediction = model.predict([[age,gender,bmi,children,smoke,selectedRegion[0],selectedRegion[1],selectedRegion[2]]])
         print(prediction[0])
         
-        st.success(f'Your Insurance Cost is Rs.{round(prediction[0],2)}')
+        st.success(f'Your Insurance Cost is {round(prediction[0],2)}')
 
 
 if __name__ == '__main__':
