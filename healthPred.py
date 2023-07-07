@@ -11,8 +11,8 @@ def main():
     st.markdown(html_temp, unsafe_allow_html=True)
 
     model = joblib.load('health_model_gbr')
-    
-    st.markdown("Source Code 🔗 [https://colab.research.google.com/drive/18TNlAUxhtXS6DsyALau_Q1qVjoBHrlDw?usp=sharing](%s)" % url)
+    url = 'https://colab.research.google.com/drive/18TNlAUxhtXS6DsyALau_Q1qVjoBHrlDw?usp=sharing'
+    st.markdown("Source Code 🔗(%s)" % url)
     st.divider()
 
     age = st.slider('Enter your age', 18, 100)
